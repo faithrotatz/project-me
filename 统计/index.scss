@@ -1,0 +1,133 @@
+$width:1095px;
+$color:#fff;
+$bgcolor:#3281fd;
+$fontsize:13px;
+$bordercolor:#b8b8b8;
+.content-header{
+  width: $width;
+  height: 56px;
+  background: #fff;
+  margin: 0 auto;
+}
+.content-header-ul{
+  width: 100%;
+  height:100%;
+li{
+    float: left;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.content-header-li{
+  font-size: 13px;
+  color: #000;
+  line-height: 56px;
+  padding: 0 10px;
+}
+.content-header-select{
+  width: 100px;
+  height: 30px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-left: 10px;
+  span{
+    line-height: 30px;
+    font-size: 13px;
+  }
+}
+
+.content-header-search{
+  width:90px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+  color: #fff;
+  background:$bgcolor;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+// 主体内容
+.content-container{
+  width: $width;
+  margin: 0 auto;
+  background: $color;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.content-container-header{
+  height: 47px;
+  border-bottom: 3px solid $bgcolor;
+  color:#000;
+  line-height: 45px;
+  text-align: left;
+  font-size: $fontsize;
+  padding-left: 30px;
+}
+.content-container-echart{
+  width: 100%;
+  min-height: 396px;
+  padding: 30px;
+  .content-container-table{
+   width: 100%;
+   min-height: 210px;
+   border: 1px solid $bordercolor;
+
+  }
+}
+.content-container-thead{
+  width: 100%;
+  height:42px;
+
+  text-align: left;
+  span{
+    width: 346px;
+    height: 100%;
+    display: inline-block;
+    color: black;
+    background: #f0f0f0;
+    text-align: center;
+    line-height:45px;
+    font-size: $fontsize;
+    margin-left: 311px;
+    border-left: 1px solid $bordercolor;
+    border-right: 1px solid $bordercolor;
+  }
+}
+// table
+.content-container-table table{
+  width: 100%;
+  font-size: $fontsize;
+  tr{
+    height: 42px;
+  }
+  th{
+    color: $color;
+    background: #e05b48;
+    font-weight: normal;
+    height: 42px;
+    border-top: 1px solid $bordercolor;
+    border-right: 1px solid $bordercolor;
+  }
+  td{
+    color: #666666;
+    height: 42px;
+    border-top: 1px solid $bordercolor;
+    border-right: 1px solid $bordercolor;
+  }
+}
+.thwidth1{
+    width: 80px;
+}
+.thwidth2{
+  width: 50px;
+}
+.thwidth3{
+  width: 100px;
+}
+.content-container-table table tr:last-child{
+  background:#f0f0f0;
+}

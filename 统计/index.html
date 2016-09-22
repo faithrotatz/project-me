@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>盘客源统计</title>
+</head>
+<link rel="stylesheet" href="gobal.css">
+<link rel="stylesheet" href="index.css">
+<body>
+  <!-- 顶部搜索 -->
+<section>
+
+  <div class="content-header">
+    <ul class="content-header-ul">
+      <li class="content-header-li">
+        昨天
+      </li>
+      <li class="content-header-li">
+        最近7天
+      </li>
+      <li class="content-header-li">
+       最近30天
+      </li>
+      <li class="content-header-select">
+
+      </li>
+      <li class="content-header-select">
+        <span>全公司</span>
+      </li>
+      <li class="content-header-select">
+       <span>经纪人</span>
+      </li>
+      <li class="content-header-search">
+        查看
+      </li>
+      <li class="content-header-li">
+        导出数据
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <!-- 趋势图 -->
+  <div class="content-container">
+    <div class="content-container-header">
+     趋势图
+    </div>
+    <div class="content-container-echart" id='aa'>
+
+    </div>
+  </div>
+  <!-- 详细数据 -->
+  <div class="content-container">
+    <div class="content-container-header">
+     详细数据
+    </div>
+    <div class="content-container-echart">
+    <div class="content-container-table">
+      <div class="content-container-thead">
+         <span>带看</span>
+      </div>
+      <table  cellpadding='0' cellspacing='0'>
+       <tr>
+         <th class="thwidth1">组织</th>
+         <th class="thwidth1">姓名</th>
+         <th class="thwidth1">盘源新增</th>
+         <th class="thwidth1">客源新增</th>
+         <th class="thwidth2">A类</th>
+         <th class="thwidth2">B类</th>
+         <th class="thwidth2">B+类</th>
+         <th class="thwidth2">c类</th>
+         <th class="thwidth2">合计</th>
+         <th class="thwidth2">首次</th>
+         <th class="thwidth2">重复</th>
+         <th class="thwidth1">成交单数</th>
+         <th class="thwidth3">成交面积(m²)</th>
+         <th class="thwidth3">成交佣金(元)</th>
+         <th class="thwidth3" style="border-right:none">成交业绩(元)</th>
+       </tr>
+       <!-- 中间内容 -->
+       <tr>
+         <td class="thwidth1">宝安分部</td>
+         <td class="thwidth1">东方不败</td>
+         <td class="thwidth1">盘源新增</td>
+         <td class="thwidth1">客源新增</td>
+         <td class="thwidth2">A类</td>
+         <td class="thwidth2">B类</td>
+         <td class="thwidth2">B+类</td>
+         <td class="thwidth2">c类</td>
+         <td class="thwidth2">合计</td>
+         <td class="thwidth2">首次</td>
+         <td class="thwidth2">重置</td>
+         <td class="thwidth1">成交单数</td>
+         <td class="thwidth3">成交面积(m²)</td>
+         <td class="thwidth3">成交佣金(元)</td>
+         <td class="thwidth3" style="border-right:none">成交业绩(元)</td>
+       </tr>
+       <tr>
+         <td class="thwidth1">宝安分部</td>
+         <td class="thwidth1">东方不败</td>
+         <td class="thwidth1">盘源新增</td>
+         <td class="thwidth1">客源新增</td>
+         <td class="thwidth2">A类</td>
+         <td class="thwidth2">B类</td>
+         <td class="thwidth2">B+类</td>
+         <td class="thwidth2">c类</td>
+         <td class="thwidth2">合计</td>
+         <td class="thwidth2">首次</td>
+         <td class="thwidth2">重置</td>
+         <td class="thwidth1">成交单数</td>
+         <td class="thwidth3">成交面积(m²)</td>
+         <td class="thwidth3">成交佣金(元)</td>
+         <td class="thwidth3" style="border-right:none">成交业绩(元)</td>
+       </tr>
+       <tr>
+         <td class="thwidth1">宝安分部</td>
+         <td class="thwidth1">东方不败</td>
+         <td class="thwidth1">盘源新增</td>
+         <td class="thwidth1">客源新增</td>
+         <td class="thwidth2">A类</td>
+         <td class="thwidth2">B类</td>
+         <td class="thwidth2">B+类</td>
+         <td class="thwidth2">c类</td>
+         <td class="thwidth2">合计</td>
+         <td class="thwidth2">首次</td>
+         <td class="thwidth2">重置</td>
+         <td class="thwidth1">成交单数</td>
+         <td class="thwidth3">成交面积(m²)</td>
+         <td class="thwidth3">成交佣金(元)</td>
+         <td class="thwidth3" style="border-right:none">成交业绩(元)</td>
+       </tr>
+       <!-- 底部 -->
+       <tr>
+         <td class="thwidth1"  colspan="2">合计</td>
+
+         <td class="thwidth1">盘源新增</td>
+         <td class="thwidth1">客源新增</td>
+         <td class="thwidth2">A类</td>
+         <td class="thwidth2">B类</td>
+         <td class="thwidth2">B+类</td>
+         <td class="thwidth2">c类</td>
+         <td class="thwidth2">合计</td>
+         <td class="thwidth2">首次</td>
+         <td class="thwidth2">重置</td>
+         <td class="thwidth1">成交单数</td>
+         <td class="thwidth3">成交面积(m²)</td>
+         <td class="thwidth3">成交佣金(元)</td>
+         <td class="thwidth3" style="border-right:none">成交业绩(元)</td>
+       </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+</section>
+</body>
+<script src='js/jquery.js'></script>
+<script src='js/echarts.js'></script>
+<script src='js/echart-protice.js'></script>
+
+</html>
